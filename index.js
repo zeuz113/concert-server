@@ -1,5 +1,6 @@
 app = require('express.io')()
 app.http().io()
+app.set('port', process.env.PORT || 5000);
 var express = require('express');
 
 app.listen(app.get('port'), function() {
