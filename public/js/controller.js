@@ -1,4 +1,4 @@
-var socket = io.connect('http://concerts.jit.su');
+var socket = io.connect('https://pixelmapping.herokuapp.com/');
   socket.on('init', function (data) {
     console.log(data);
     $("#"+data["color"]).addClass("selected")
