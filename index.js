@@ -1,7 +1,13 @@
 app = require('express.io')()
 app.http().io()
 var express = require('express');
-app.listen(8081);
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+module.exports = app;
+
 var actualcolor="blue";
 
 app.get('/', function (req, res) {
