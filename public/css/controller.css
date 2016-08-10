@@ -1,0 +1,31 @@
+.colorselector{
+	width: 100px;
+	height: 100px;
+	float: left;
+	border:solid 1px #000000;
+}
+
+#blue{
+	background-color: #0000FF
+}
+#red{
+	background-color: #FF0000
+}
+#green{
+	background-color: #00FF00
+}
+#yellow{
+	background-color: #FFFF00
+}
+#black{
+	background-color: #000000
+}
+.selected{
+  border:solid 2px #FF0000;
+}
+.speedselector{
+	width: 100px;
+	height: 100px;
+	float: left;
+	border:solid 1px #000000;
+}

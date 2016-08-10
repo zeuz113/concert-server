@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/controller.js"></script>
+		<link rel="stylesheet"  href="css/controller.css" type="text/css" media="all">
+	</head>
+	<body>
+		Control dashboard
+
+		<div style="overflow: auto;">
+			<div class="colorselector" id="blue" onClick="select_color('blue')"></div>
+			<div class="colorselector" id="red" onClick="select_color('red')"></div>
+			<div class="colorselector" id="yellow" onClick="select_color('yellow')"></div>
+			<div class="colorselector" id="green" onClick="select_color('green')"></div>
+			<div class="colorselector" id="black" onClick="select_color('black')"></div>
+		</div>
+		<div style="overflow: auto;">
+			<div class="speedselector" id="100" onClick="select_speed('100')">100</div>
+			<div class="speedselector" id="200" onClick="select_speed('200')">200</div>
+			<div class="speedselector" id="300" onClick="select_speed('300')">300</div>
+			<div class="speedselector" id="400" onClick="select_speed('400')">400</div>
+			<div class="speedselector" id="500" onClick="select_speed('500')">500</div>
+		</div>
+	</body>
+</html>
