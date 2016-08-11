@@ -12,11 +12,12 @@ module.exports = app;
 var actualcolor="blue";
 
 app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
+  res.sendfile(__dirname + '/cliente.html');
 });
 app.get('/controller', function (req, res) {
   res.sendfile(__dirname + '/controller.html');
 });
+
 app.use( express.static(__dirname + '/public') );
 app.io.set( 'origins', '*:*' );
 app.io.sockets.on('connection', function (socket) {
